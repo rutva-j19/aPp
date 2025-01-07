@@ -241,6 +241,16 @@ def main():
 			else:
 				st.error("Please enter a valid email.")
 
+		count = get_user_count()
+		st.markdown(f"""
+			        <div style='padding: 20px; border-radius: 10px; background-color: #f0f2f6'>
+			            <h2 style='color: #0066cc; margin-left:-15px  ; font-size:18px'>Total Users: {count}</h2>
+			           
+			                
+			            
+			        </div>
+			        """.format(count), unsafe_allow_html=True)
+
 		st.header("Recipe Parameters")
 
 		ingredients_input = st.text_area(

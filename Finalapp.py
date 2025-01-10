@@ -35,11 +35,7 @@ def init_user_db():
 			writer.writerow(['Email ID'])
 
 
-#  conn = sqlite3.connect("user_data.db")
-#  cursor = conn.cursor()
-#  cursor.execute("""
-#         CREATE TABLE IF NOT EXISTS users (
-#             email TEXT PRIMARY KEY
+
 #         )
 #     """)
 #  conn.commit()
